@@ -4,7 +4,13 @@ from langchain.chat_models import ChatOpenAI
 from agents.linkedin_lookup_agent import lookup as linkedin_lookup_agent
 from third_parties.linkedIn import scrape_linkedin_profile
 from output_parser import person_intel_parser, personIntel
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
+os.environ["PROXYCURL_API_KEY"]=os.getenv("PROXYCURL_API_KEY")
+os.environ["SERPAPI_API_KEY"]=os.getenv("SERPAPI_API_KEY")
 
 def ice_breaker(name: str) -> tuple[personIntel, str]:
     linkedin_profile_url = linkedin_lookup_agent(name=name)

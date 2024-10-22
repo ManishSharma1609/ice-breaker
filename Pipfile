@@ -8,6 +8,9 @@ openai = "==0.28.1"
 python-dotenv = "*"
 tweepy = "*"
 flask = "*"
+langchain = "*"
+langchain-community = "*"
+google-search-results = "*"
 
 [dev-packages]
 

@@ -4,7 +4,13 @@ from langchain.chat_models import ChatOpenAI
 from langchain.agents import initialize_agent, Tool, AgentType
 import re
 from tools.tools import get_profile_url
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
+os.environ["PROXYCURL_API_KEY"]=os.getenv("PROXYCURL_API_KEY")
+os.environ["SERPAPI_API_KEY"]=os.getenv("SERPAPI_API_KEY")
 
 def lookup(name: str) -> str:
     llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
