@@ -40,7 +40,7 @@ To run this project, you will need to add the following environment variables to
 
 3. Install dependencies
 
-Create a new virtual environment using pipenv:
+Create a new virtual environment using `pipenv`:
 
 ```bash
   pipenv shell
