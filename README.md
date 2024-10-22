@@ -4,9 +4,7 @@ A repository for generating interesting facts, ice breakers, and summaries about
 
 This web application extracts insightful details about people based on their names using OpenAI's LLM, SerpAPI, and Proxycurl APIs, creating a unique ice-breaker experience. 
 
-
-![Uploading ezgif-7-d1e3236dff.gif…]()
-
+![ezgif-7-d1e3236dff](https://github.com/user-attachments/assets/39ebe4ff-5a23-4f9d-a7a4-8b28605ea261)
 
 
 ## Tech Stack
