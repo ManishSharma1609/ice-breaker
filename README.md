@@ -27,7 +27,7 @@ To run this project, you will need to add the following environment variables to
 1. Clone the project
 
 ```bash
-  git clone https://github.com/ManishSharma1609/documentation-helper.git
+  git clone https://github.com/ManishSharma1609/ice-breaker.git
 ```
 
 2. Go to the project directory
